@@ -1,0 +1,38 @@
+<p id="notice"><%= notice %></p>
+
+<button><%= link_to 'New Appointment', new_appointment_path %></button>
+<button><%= link_to 'New Client', new_client_path %></button>
+
+<table>
+  <thead>
+    <tr>
+      <th>Training Type</th>
+      <th>Pet Name</th>
+      <th>Appointment Date</th>
+      <th>Appointment Time</th>
+      <th>Length of Visit</th>
+      <th>Client Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @appointments.each do |appointment| %>
+      <tr>
+        <td><%= appointment.appType %></td>
+        <td><%= appointment.appClient %></td>
+        <td><%= appointment.appDate %></td>
+        <td><%= appointment.appTime %></td>
+        <td><%= appointment.appLength %></td>
+        <td><%= appointment.client_id %></td>
+        <td><button class="tableButton"><%= link_to 'Show', appointment %></button></td>
+        <td><button class="tableButton"><%= link_to 'Edit', edit_appointment_path(appointment) %></button></td>
+        <td><button class="tableButton"><%= link_to 'Delete', appointment, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+

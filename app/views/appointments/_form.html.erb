@@ -1,0 +1,47 @@
+<%= form_with(model: appointment, local: true) do |form| %>
+  <% if appointment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(appointment.errors.count, "error") %> prohibited this appointment from being saved:</h2>
+
+      <ul>
+        <% appointment.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :'Training Type' %>
+    <%= form.text_field :appType %>
+  </div>
+
+  <div class="field">
+    <%= form.label :'Pet Name' %>
+    <%= form.text_field :appClient %>
+  </div>
+
+  <div class="field">
+    <%= form.label :'Date of Appointment' %>
+    <%= form.date_select :appDate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :'Time of Appointment' %>
+    <%= form.time_select :appTime %>
+  </div>
+
+  <div class="field">
+    <%= form.label :'Appointment Length' %>
+    <%= form.number_field :appLength %>
+  </div>
+
+  <div class="field">
+    <%= form.label :'Client' %>
+    <%= form.text_field :client_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

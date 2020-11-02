@@ -1,0 +1,238 @@
+// Place all the styles related to the Appointments controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+html, body {
+    background-color: #ffffff !important;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    height: 100%;
+  }
+  
+  .heading {
+    top: 0px;
+    position: absolute;
+    margin-top: 45vh;
+    color: #fff2cc;
+  }
+  
+  .title {
+    margin-top: -4.67vh;
+    text-align: center;
+    font-size: 4rem;
+    padding-bottom: 20px;
+  }
+  
+  header {
+    background-color: #fff2cc;
+  }
+  
+  a:hover {
+    text-decoration: none !important;
+  }
+  
+  #icon1{
+    height: 50%;
+    width: 50%;
+    border-radius: 100%;
+    
+  }
+  .shortcut {
+    height: 4vw;
+    line-height: 1vw;
+    color: #1b3300;
+  }
+  
+  .shortcut-text {
+    padding-top: 1vw;
+  }
+  
+  .shortcut-text > p {
+    margin-top: 1vh;
+  }
+  
+  .bodyPicture1 {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    margin-left: 90px;
+    margin-right: 50px;
+    max-width: 40%;
+    float: left;
+  }
+  
+  .body {
+    margin-top: 70px;
+    max-width: 15%;
+    float: left;
+  }
+  
+  .body p {
+    font-size: 1.5rem;
+    text-align: left;
+    line-height: 1.5;
+  }
+  
+  .bodyPicture2 {
+    margin-left: 50px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    max-width: 40%;
+    margin-right: 50px;
+    float: left;
+  }
+  
+  .contact-body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    line-height:90%;
+  }
+  
+  a:link {
+    color: #020202;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #020202;
+    text-decoration: underline;
+  }
+  
+  .footerWrapper {
+    float: left;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr));
+    
+    background-color: #fff2cc;
+    padding-top: 25px;
+    width: 100%;
+  } 
+  
+  .footerWrapper h6 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  
+  .footerWrapper p {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.5rem;
+  }
+  
+  .copyright {
+    padding-top: 40px;
+  }
+  
+  /*Nav Styles*/
+  
+  .linksToPages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr));
+    width: 30%;
+    text-align: center;
+  }
+  
+  .linksToPages > img {
+    border-radius: 100%;
+  }
+
+  button, table {
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  /*Button Styles*/
+
+  button {
+      margin-top: 2vh;
+      margin-bottom: 2vh;
+      margin-left: 2vh;
+      background-color: #fff2cc;
+      font-size: 1.5rem;
+      text-decoration: none;
+      border-radius: 15px;
+      border: 2px solid black;
+  }
+
+  button a {
+      padding: 4vh;
+      text-decoration: none;
+      color: #020202;
+  }
+
+  button:hover {
+      background-color: #FFE8A6;
+  }
+
+  .tableButton {
+    margin: 1vh;
+    background-color: #fefefe;
+  }
+
+  .tableButton a {
+    padding: 1vh;
+    text-decoration: none;
+  }
+
+  .tableButton:hover {
+    background-color: #e5e5e5;
+  }
+
+  /*Table Styles*/
+
+  table {
+      width: 100%;
+      display: table;
+      border-spacing: 2px;
+      text-align: center;
+      margin-bottom: 2px;
+      margin-left: 2vh;
+      margin-right: 2vh;
+  }
+
+  thead {
+    display: table-header-group;
+    vertical-align: middle;
+    text-align: left;
+    font-size: 1.5rem;
+    border: 2px solid black;
+  }
+
+  tbody {
+      display: table-row-group;
+      margin-top: 50px;
+      text-align: left;
+      font-size: 1.5rem;
+  }
+
+  tbody td {
+      line-height: 3rem;
+      padding: 8px;
+  }
+
+  tbody tr:nth-child(even) {
+      background-color: #ffffff;
+  }
+
+  tbody tr:nth-child(odd) {
+      background-color: #fff2cc;
+      border-collapse: collapse;
+      width:100%;
+  }
+
+  /*Field Styles*/
+
+  .field {
+    font-size: 1.5rem;
+  }
+
+  /*Paragraph Styles*/
+  p {
+      margin-left: 2vh;
+      font-size: 1.5rem;
+  }
+
+
+
+

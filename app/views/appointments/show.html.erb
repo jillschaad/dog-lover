@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Training Type:</strong>
+  <%= @appointment.appType %>
+</p>
+
+<p>
+  <strong>Pet Name:</strong>
+  <%= @appointment.appClient %>
+</p>
+
+<p>
+  <strong>Appointment Date:</strong>
+  <%= @appointment.appDate %>
+</p>
+
+<p>
+  <strong>Appointment Time:</strong>
+  <%= @appointment.appTime %>
+</p>
+
+<p>
+  <strong>Length of Visit:</strong>
+  <%= @appointment.appLength %>
+</p>
+
+<p>
+  <strong>Client Name:</strong>
+  <%= @appointment.client_id %>
+</p>
+
+<button class="tableButton"><%= link_to 'Edit', edit_appointment_path(@appointment) %></button>
+<button class="tableButton"><%= link_to 'Back', appointments_path %></button>

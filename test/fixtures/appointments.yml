@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  appType: MyString
+  appClient: MyString
+  appDate: 2020-04-29
+  appTime: 2020-04-29 18:23:51
+  appLength: 1
+  client: one
+
+two:
+  appType: MyString
+  appClient: MyString
+  appDate: 2020-04-29
+  appTime: 2020-04-29 18:23:51
+  appLength: 1
+  client: two

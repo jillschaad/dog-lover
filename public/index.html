@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Meta Information-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!--Title-->
+        <title>Dog Lover</title>
+        <!--Links-->
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+        <!--Scripts-->
+        <script
+            src="https://kit.fontawesome.com/d5ca5af83e.js"
+            crossorigin="anonymous">
+        </script>
+
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous">
+        </script>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous">
+        </script>
+
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous">
+        </script>
+    </head>
+
+    <header>
+        <div class="linksToPages">
+        
+            <div class="vlogShortcut">
+              <div class="shortcut-text">
+                <p>
+                  <a href="vlog.html">
+                    <figure>
+                    <img src="Pictures/vlogicon.jpg" id="icon1">
+                    <figcaption>Vlog</figcaption>
+                    </figure>
+                  </a>
+                </p>
+              </div>
+            </div>
+        
+            <div class="bookSessionShortcut">
+              <div class="shortcut-text">
+                <p>
+                  <a href="appointments">
+                    <figure>
+                    <img src="Pictures/Appointment.jpg" id="icon1">
+                    <figcaption>Book a Session</figcaption>
+                    </figure>
+                  </a>
+                </p>
+              </div>
+            </div>
+          
+            <div class="aboutUsShortcut">
+              <div class="shortcut-text">
+                <p>
+                  <a href="about_us.html">
+                    <figure>
+                    <img src="Pictures/abouticon.jpg" id="icon1">
+                    <figcaption>About Us</figcaption>
+                    </figure>
+                  </a>
+                </p>
+              </div>
+            </div>
+          
+        </div>
+        <div class="title">
+            The Dog Lover
+        </div>
+    </header>
+
+    <body>
+        <!--
+        <div class="parallax">
+            <p id="quote1">
+                "Positive training puts emphasis on
+                <br>
+                teaching dogs WHAT TO DO, not continually
+                <br> 
+                punishing a dog for not doing what we want" -Victoria Stillwell
+            </p>
+        </div>
+      -->
+        <div class="bodyPicture1">
+          <img src="Pictures/dog_walking.jpg">
+        </div>
+
+        <div class="body">
+            <div class="contact-body">
+              <p>
+                Understanding your dog and knowing how to 
+                control him, develop his potentials, and resolve behavior problems, emotional conflicts and frustrations are no less essential than love and respect.
+              </p>
+            </div>
+          </div>
+
+        <div class="bodyPicture2">
+          <img src="Pictures/dog_training.jpg">
+        </div>
+       
+    </body>
+
+    <footer>
+      <div class="footerWrapper">
+      
+        <div class="footerColumn1">
+          <h6>Contact us at-</h6>
+          <h6><a href="mailto:">abcdefghstuvwxyz@ijklmno.com</a></h6>
+          <h6><a href="tel:">(646) 646 6464</a></h6>
+        </div>
+
+        <div class="footerColumn2">
+          <p>"There is a world of difference between a dog that is off the
+            leash and a dog that is trained to be of the leash."</p>
+        </div>
+
+        <div class="footerColumn3">
+          <h6>Mike Stanley</h6>
+          <h6>Certified Pet Trainer</h6>
+          <h6><a href="https://www.ccpdt.org/">CCPDT</a></h6>
+        </div>
+      
+      </div>
+      <!--
+        <div class="shortcutsFOOTER">
+            <div class="shortcutFOOTER">
+              <div class="shortcut-text">
+                <h4>Mike Stanley - Certified Pet Trainer</h4>
+                <h5 class="contact">Email: <a href="mailto:">abcdefghstuvwxyz@ijklmno.com</a></h5>
+                <h5 class="contact">Phone: <a href="tel:">(646) 646 6464</a></h5>
+                <p class="copyright">Copyright J. Schaad, Tameah Young, Andrew Hegarty | All Rights Reserved</p>
+              </div>
+            </div>
+        </div>
+      -->
+    </footer>
+</html>
+
+<script>
+    $(document).ready(function () {
+      // Add smooth scrolling to all links
+      $("a").on('click', function (event) {
+    
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+    
+          // Store hash
+          var hash = this.hash;
+    
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function () {
+    
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+   </script>

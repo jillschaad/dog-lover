@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Book a Session - The Dog Lover</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <header>
+        <div class="linksToPages">
+              <div class="homeShortcut">
+                <div class="shortcut-text">
+                  <p>
+                    <a href="index.html">
+                      <figure>
+                      <img src="Pictures/homeicon.jpg" id="icon1">
+                      <figcaption>Home</figcaption>
+                      </figure>
+                    </a>
+                  </p>
+                </div>
+              </div>
+
+            <div class="vlogShortcut">
+              <div class="shortcut-text">
+                <p>
+                  <a href="vlog.html">
+                    <figure>
+                    <img src="Pictures/vlogicon.jpg" id="icon1">
+                    <figcaption>Vlog</figcaption>
+                    </figure>
+                  </a>
+                </p>
+              </div>
+            </div>
+            
+            <div class="aboutUsShortcut">
+              <div class="shortcut-text">
+                <p>
+                  <a href="about_us.html">
+                    <figure>
+                    <img src="Pictures/abouticon.jpg" id="icon1">
+                    <figcaption>About Us</figcaption>
+                    </figure>
+                  </a>
+                </p>
+              </div>
+            </div>
+          
+        </div>
+
+        <div class="title">
+          Book a Session
+        </div>
+        
+        
+    </header>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
